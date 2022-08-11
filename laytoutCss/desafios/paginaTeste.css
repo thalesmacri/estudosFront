@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+}
+
+body{
+   
+    background: radial-gradient(rgba(88, 9, 119), rgba(0, 0, 0, 0.65)), url(https://i.pinimg.com/originals/db/3a/68/db3a68f4a8f37e66dffb87436f9f3af4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    
+    
+}
+
+nav{
+    background-color: rgba(71, 6, 6, 0.74);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    
+    
+}
+
+#logo{
+    height: 150px;
+    
+    padding: 2px;
+    border: 1px dashed black; 
+    border-radius: 50px;
+    background-color: rgba(15, 2, 2, 0.808);
+    gap: 10px;
+}
+
+#nome{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+    flex: 2;
+    gap: .8rem;
+  
+  
+   
+}
+
+input{
+    color: black;
+    flex: 1;
+    padding: 8px;
+    border: 2px solid black;
+    gap: .2rem;
+  
+
+}
+
+button{
+    padding: 8px;
+    background-color: black;
+    color: white;
+}
+
+#lancamentos{
+    font-size: 70px;
+    position: absolute;
+    top: 20%;
+    left: 5%;
+    color: white;
+}
+
+.content{
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position:absolute;
+    top: 30%;
+    left: 2%;
+    cursor: pointer;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar{
+    width: 70px;
+    height: 17px;
+    border: 2px solid white;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bar:hover{
+    background-color: #fff;
+    transition: .5s;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides{
+    display: flex;
+    width: 400%;
+    height: 100%;
+}
+
+.slide{
+    width: 25%;
+    transition: .6s;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked ~ .s1{
+    margin-left: 0;
+}
+
+#slide2:checked ~ .s1{
+    margin-left: -25%;
+}
+
+#slide3:checked ~ .s1{
+    margin-left: -50%;
+}
+
+#slide4:checked ~ .s1{
+    margin-left: -75%;
+}
+
+#popular{
+    color: red;
+    font-size: 65px;
+    font-family: fantasy;
+    position: absolute;
+    top: 20%;
+    left: 72.6%;
+}
+
+.main { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.galery{
+    width: 540px;
+    height: 360px;
+    position: absolute;
+    left: 65%;
+    top: 30%;
+    border: 2px dashed white;
+    border-radius: 90px;   
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.galery .fotos{
+    display: flex;
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 540px;
+    height: 360px;
+    object-fit: fill;
+    margin: 0;
+}
+
+@keyframes animacao {
+    0%{margin-left:0;}
+    20%{margin-left:0;}
+    25%{margin-left:-100%;}
+    45%{margin-left:-100%;}
+    50%{margin-left:-200%;}
+    70%{margin-left:-200%;}
+    75%{margin-left:-300%;}
+    95%{margin-left:-300%;}
+    100%{margin-left:-400%;}
+}
+
+
+   
+
+
+
+
+
